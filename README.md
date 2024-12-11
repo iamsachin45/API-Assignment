@@ -7,14 +7,14 @@ For sign up
 ```
 curl -X POST http://localhost:8080/signup \
 -H "Content-Type: application/json" \
--d '{"email": "user@example.com", "password": "securepassword"}'
+-d '{"email": "sachin@example.com", "password": "sachin123"}'
 ```
 
 For Sign in
 ```
 curl -X POST http://localhost:8080/signin \
 -H "Content-Type: application/json" \
--d '{"email": "user@example.com", "password": "securepassword"}'
+-d '{"email": "sachin@example.com", "password": "sachin123"}'
 ```
 Response will be 
 ```
