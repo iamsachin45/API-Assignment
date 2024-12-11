@@ -16,6 +16,11 @@ curl -X POST http://localhost:8080/signin \
 -H "Content-Type: application/json" \
 -d '{"email": "user@example.com", "password": "securepassword"}'
 ```
+Response will be 
+```
+{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MzM5MzI2MTksInVzZXIiOnsiZW1haWwiOiJzYWNoaW5AZXhhbXBsZS5jb20iLCJwYXNzd29yZCI6InNhY2hpbjEyMyJ9fQ.AXFa57YFEi3iG-imvWGDEhwNIcklGKz_nv-mb7bJb9Y"}
+
+```
 
 For Protected area
 ```
