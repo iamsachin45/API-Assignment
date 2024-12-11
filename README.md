@@ -17,3 +17,20 @@ curl -X POST http://localhost:8080/signin \
 -d '{"email": "user@example.com", "password": "securepassword"}'
 ```
 
+For Protected area
+```
+curl -X GET http://localhost:8080/protected \
+-H "Authorization: Bearer <token>"
+```
+
+For Token revocation
+```
+curl -X POST http://localhost:8080/revoke \
+-H "Authorization: Bearer <token>"
+```
+
+For Token Renew
+```
+curl -X POST http://localhost:8080/renew \
+-H "Authorization: Bearer <token>"
+```
