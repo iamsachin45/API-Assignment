@@ -1,7 +1,10 @@
 Steps to setup 
 1. Clone the repo.
-2. go run main.go
-3. Now try with the following curl commands for sign, signup, token generator, token revocation and token renew
+2. Run the server using
+3. ```
+   go run main.go
+   ```
+4. Now try with the following curl commands for sign, signup, token generator, token revocation and token renew
 
 For sign up 
 ```
