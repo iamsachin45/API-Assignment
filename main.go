@@ -9,6 +9,7 @@ import (
 	"github.com/golang-jwt/jwt/v5"
 )
 
+// user data map (username -> password)
 type UserData struct {
 	data map[string]string
 }
@@ -18,14 +19,18 @@ type User struct {
 	Password string `json:"password"`
 }
 
+// revoked tokens data map
 var revokedTokens = struct {
 	data map[string]string
 }{data: make(map[string]string)}
 
+// secret key for jwt
 var secretKey = []byte("secret-key")
 
+// user database
 var userDB = UserData{data: make(map[string]string)}
 
+// main function with all the http handler
 func main() {
 	http.HandleFunc("/signup", signUpUserHelper)
 
